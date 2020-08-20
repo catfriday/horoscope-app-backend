@@ -64,6 +64,7 @@ GEM
     crass (1.0.6)
     erubi (1.9.0)
     ffi (1.13.1)
+    funtimes (0.4.0)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     i18n (1.8.5)
@@ -144,6 +145,9 @@ GEM
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
     zeitwerk (2.4.0)
+    zodiac (0.2.10)
+      funtimes
+      i18n
 
 PLATFORMS
   ruby
@@ -159,6 +163,7 @@ DEPENDENCIES
   spring-watcher-listen (~> 2.0.0)
   sqlite3 (~> 1.4)
   tzinfo-data
+  zodiac
 
 RUBY VERSION
    ruby 2.6.1p33

@@ -3,4 +3,5 @@ class User < ApplicationRecord
     has_many :user_horoscopes 
     has_many :horoscopes, through: :user_horoscopes
     # validates :username, uniqueness: true
+    # zodiac_reader :birthdate
 end
