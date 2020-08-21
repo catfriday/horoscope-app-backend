@@ -9,32 +9,33 @@
 # Horoscope.destroy_all
 # UserHoroscope.destroy_all 
 
-# cat = User.create(name: "cat", birthdate: 19840224)
+cat = User.create(name: "cat", birthdate: "1984-02-24")
 # bob = User.create(name:"bob", birthdate: 19550316)
  
 # horoscope = Horoscope.create(user_id: cat.id, title: "new", text:"some text")
-# # hello = Horoscope.create(user_id: cat.id, title: "another", text:"some text")
+# hello = Horoscope.create(user_id: cat.id, title: "another", text:"some text")
 
-# horoscopes = [
-#     {"love" => "Today you will find the love of your life"},
-#     {"positivity" =>"You have nothing to lose bu being postive, but much more to lose by not being positive"},
-#     {"another one" => "today will be another awesome day"},
-#     {"why not?" => "Today you will be offered something very daring. Go for it! You only live once"},
-#     {"forget yesterday" => "Its gone, forget abouy it! Focus on making today great"},
-#     {"smile!" => "Smiling will always make you feel better"},
-#     {"money" => "money isn't everything, but today you will get a lot of it!"},
-#     {"have fun!" => "Today will be a great day to have fun!"},
-#     {"let go" => "Today you will realize that thing you've been holding onto is better to let go. You'll feel better"},
-#     {"what if?" => "What if you didn't worry at all today, try it out and see how great your day will be"},
-#     {"it's already yours" => " That thing you've wanted for so long is already yours, you just have to go get it!"}
-# ]
+horoscopes = [
+    {"love" => "Today you will find the love of your life"},
+    {"positivity" =>"You have nothing to lose bu being postive, but much more to lose by not being positive"},
+    {"another one" => "today will be another awesome day"},
+    {"why not?" => "Today you will be offered something very daring. Go for it! You only live once"},
+    {"forget yesterday" => "Its gone, forget abouy it! Focus on making today great"},
+    {"smile!" => "Smiling will always make you feel better"},
+    {"money" => "money isn't everything, but today you will get a lot of it!"},
+    {"have fun!" => "Today will be a great day to have fun!"},
+    {"let go" => "Today you will realize that thing you've been holding onto is better to let go. You'll feel better"},
+    {"what if?" => "What if you didn't worry at all today, try it out and see how great your day will be"},
+    {"it's already yours" => " That thing you've wanted for so long is already yours, you just have to go get it!"}
+]
 
-# horoscopes.each do |array|
-#     array.each do |name, horoscope|
-#     Horoscope.create(user_id: cat.id, title: name, text: horoscope )
-#     end
-# end
+
+horoscopes.each do |array|
+    array.each do |name, horoscope|
+    Horoscope.create(user_id: 1, title: name, text: horoscope )
+    end
+end
 
 # UserHoroscope.create(user_id: bob.id, horoscope_id:Horoscope.first.id)
-shelly = User.create(name: "Shelly Washington", birthdate: 19901015)
- test = Horoscope.create(user_id: shelly.id, title: "test", text:"no author")
+shelly = User.create(name: "Shelly Washington", birthdate: '1990-10-15')
+#  test = Horoscope.create(user_id: shelly.id, title: "test", text:"no author")
