@@ -26,6 +26,6 @@ class HoroscopesController < ApplicationController
     private
 
     def horoscope_params
-        params.require(:horoscope).permit(:title, :text, :user_id)
+        params.require(:horoscope).permit(:title, :text, :author_id)
     end
 end

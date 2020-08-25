@@ -32,7 +32,7 @@ horoscopes = [
 
 horoscopes.each do |array|
     array.each do |name, horoscope|
-    Horoscope.create(user_id: 1, title: name, text: horoscope )
+    Horoscope.create(author_id: 1, title: name, text: horoscope )
     end
 end
 
